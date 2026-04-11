@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingCart</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+     <div class="Button_sect">
+     <a href="Index.html">Home</a>
+     </div>
+     <h1 id="PageTitle">ShoppingCart</h1>
+    </div>
+    <div class="floating_items">
+    <div id="Cart">
+    <form id="checkout-form" onsubmit="cashOut(event)">
+     <label for="cart-contents">Your Cart:</label>
+     <div id="status-indicators"></div>
+     <textarea id="cart-contents" name="message" readonly></textarea>
+     
+     <div class="cart-buttons">
+     <input type="submit" value="Cash out">
+     <button type="button" onclick="clearCart()">Clear Cart</button>
+     </div>
+    </form><br>
+        <h2 id="total-display">Total: $0.00</h2>
+    </div>
+    </div>
+   <div class="footer">
+        <h2>Contact us</h2>
+        <br>
+        <div class="footericons">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-skype"></i>
+        <i class="fa fa-tumblr"></i>
+        <i class="fa fa-wechat"></i>
+        </div>
+    </div>
+    <div class="Bottomnavi">
+        <div class="navilist">
+            <div class="Products">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="MenuSelection.html">Menu Selection</a></li>
+                    <li><a href="Coffee_Beans'_Info.html">Coffee Beans' Info</a></li>
+                    <li><a href="CoffeeBeansSelection.html">Coffee Beans Selection</a></li>
+                    <li><a href="BrewingEquippments.html">Brewing Equippments</a></li>
+                </ul>
+            </div>
+            <div class="Activities">
+                <h3>Activities</h3>
+                <ul>
+                    <li><a href="Events&Workshops.html">Events and Workshops</a></li>
+                    <li><a href="SpecialOffers&Subscriptions.html">SpecialOffers & Subscriptions</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>copyright @ Bean Boutique</p><br>
+    </div>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>

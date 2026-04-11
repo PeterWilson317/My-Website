@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Selection</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="Saleheader">
+     <div class="Button_sect">
+      <a href="Index.html">Home</a>
+     </div>
+        <h1 id="PageTitle">Coffee Selections</h1>
+    <div class="Button_sect">
+     <a href="ShoppingCart.html">
+     <i class="fa fa-shopping-cart"></i></a>
+     </div>
+     </div>
+    <h1 class="welcome_text">Coffee Blends</h1>
+    <p class="page_description">Coffee Blends combine beans from different origins, varieties (Arabica/Robusta), or roast levels to create a balanced, consistent flavor profile often featuring notes like chocolate, caramel, or nuts.</p>
+    <div class="BoxDetails">
+        <h2>Coffee Blends Available</h2>
+    <div class="floating_items">
+        <div class="items" id="blend-robusta">
+            <img src="Images/Arabica&Robusta.jpg" alt="Arabica & Robusta Blend">
+            <h2>Arabica + Robusta</h2>
+            <p>Arabica and Robusta blends combine the sweet, acidic, and aromatic notes of Arabica with the bold, earthy, and caffeine-rich properties of Robusta.</p>
+            <p>Popular ratios include 70/30 or 80/20 (Arabica/Robusta) for balanced espresso, or 50/50 for a, strong, crema-rich Thai-style drink,.</p> 
+            <p>These blends offer better, thicker crema for espresso and a stronger, more consistent body.</p>
+            <button onclick="addToCart('ArabicaRobusta', 20, 'blend')">Add to Cart</button>
+        </div>
+        <div class="items" id="blend-regional">
+			<img src="Images/CoffeeGlobe.jpg" alt="Regional Blends">
+            <h2>Regional Blends</h2>
+            <p>Regional coffee bean blends combine beans from specific geographical areas - primarily Latin America, Africa, and Asia/Pacific - to create distinct, consistent flavor profiles.</p>
+            <p>These blends often balance high-acidity, fruity African beans with nutty, chocolatey South American beans to create a balanced, versatile cup that offers more stability than single-origin options.</p>
+            <a href="#special-section">See Products</a>
+        </div>
+        <div class="items" id="blend-house">
+			<img src="Images/HouseBlends.png" alt="House Blends">
+            <h2>House Blends</h2>
+            <p>A house blend is a signature coffee mixture created by a roaster or café, combining beans from different origins to achieve a consistent, balanced, and unique flavor profile.</p>
+            <p>Designed to be a reliable, year-round "go-to" coffee, it is usually roasted to a medium level, offering a smooth, crowd-pleasing taste popular in cafes.</p>
+            <button onclick="addToCart('House Blends', 20, 'blend')">Add to Cart</button>
+        </div>
+        <div class="items" id="blend-roast">
+			<img src="Images/RoastedBeans.jpg" alt="Roasted Blends">
+            <h2>Roasted Blends</h2>
+            <p>Coffee roast blends are combinations of different coffee beans, often from various origins or roasted to different levels, designed to create a balanced, consistent, and complex flavor profile.</p>
+            <p>They are produced by blending before roasting (pre-blend) or after (post-roast), blending to combine the acidity of light roasts with the body of dark roasts.</p>
+            <button onclick="addToCart('Roasted Blend', 20, 'blend')">Add to Cart</button>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <div id="special-section">
+    <h1 class="welcome_text">Single-Origin Coffee</h1>
+    <p class="page_description">Single-origin coffee refers to beans sourced from one specific geographic location, such as a single farm, cooperative, or region within a country. Unlike blends, these coffees offer a pure, traceable flavor profile that reflects their unique terroir, often highlighting distinct fruity, floral, or nutty notes that are best enjoyed black or through light roasts.</p>
+    <div class="BoxDetails">
+        <h2>Single-Origin Coffee Available Here</h2>
+        <div class="floating_items">
+            <div class="items" id="origin-thailand">
+			    <img src="Images/ThaiOriginBlend.png" alt="Thai Blend">
+                <h2>Thailand</h2>
+                <button onclick="addToCart('Thailand Blend', 18, 'blend')">Add to Cart</button>
+            </div>
+            <div class="items" id="origin-myanmar">
+			    <img src="Images/MyanmarOriginBlend.png" alt="Myanmar Blend">
+                <h2>Myanmar</h2>
+                <button onclick="addToCart('Myanmar Blend', 18, 'blend')">Add to Cart</button>
+            </div>
+            <div class="items" id="origin-brazil">
+			    <img src="Images/BrazilOriginBlend.png" alt="Brazil Blend">
+                <h2>Brazil</h2>
+                <button onclick="addToCart('Brazil Blend', 18, 'blend')">Add to Cart</button>
+            </div>
+            <div class="items" id="origin-kenya">
+			    <img src="Images/KenyaOriginBlend.png" alt="Kenya Blend">
+                <h2>Kenya</h2>
+                <button onclick="addToCart('Kenya Blend', 18, 'blend')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <h2>Contact us</h2>
+        <br>
+        <div class="footericons">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-skype"></i>
+        <i class="fa fa-tumblr"></i>
+        <i class="fa fa-wechat"></i>
+        </div>
+    </div>
+    <div class="Bottomnavi">
+        <div class="navilist">
+            <div class="Products">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="MenuSelection.html">Menu Selection</a></li>
+                    <li><a href="Coffee_Beans'_Info.html">Coffee Beans' Info</a></li>
+                    <li><a href="CoffeeBeansSelection.html">Coffee Beans Selection</a></li>
+                    <li><a href="BrewingEquippments.html">Brewing Equippments</a></li>
+                </ul>
+            </div>
+            <div class="Activities">
+                <h3>Activities</h3>
+                <ul>
+                    <li><a href="Events&Workshops.html">Events and Workshops</a></li>
+                    <li><a href="SpecialOffers&Subscriptions.html">SpecialOffers & Subscriptions</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>copyright @ Bean Boutique</p><br>
+    </div>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>

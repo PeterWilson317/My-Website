@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+     <h1 id="WelcomePage">Welcome to Bean Boutique</h1>
+     <div class="section navigation"> 
+      <ul>
+       <li><a href="MenuSelection.html">Menu Selection</a></li>
+       <li><a href="Coffee_Beans'_Info.html">Coffee Beans' Info</a></li>
+       <li><a href="CoffeeBeansSelection.html">Coffee Blends</a></li>
+       <li><a href="BrewingEquippments.html">Brewing Equippments</a></li>
+       <li><a href="ShoppingCart.html">Shopping Cart</a></li>
+       <li><a href="Events&Workshops.html">Event & Workshop</a></li>
+       <li><a href="SpecialOffers&Subscriptions.html">Special Offers Subscriptions</a></li>
+      </ul>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="audio/feellike.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="music-toggle" onclick="toggleMusic()">
+        <i id="music-icon" class="fa fa-play"></i>
+    </button>
+
+    <h2 class="welcome_text">We Welcome You Coffee Fans With Upmost Sincerity</h2>
+    <p id="homepage_description">Here on Bean Boutique, you can enjoy various coffee beans and learn about their brews.</p>
+    <br>
+    <div class="search-section">
+        <div class="search-container">
+            <input type="text" id="productSearch" placeholder="Search for bean or equipment..."
+            onkeyup="if(event.key === 'Enter') executeSearch()">
+            <button onclick="executeSearch()"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div class="floating_items">
+        <a href="Coffee_Beans'_Info.html">
+        <div class="items">
+            <img src="Images/pexels-goumbik-942801.jpg" alt="To Coffee Beans' Info">
+            <h3>Here we can learn about Coffee Bean types. eg.Arabica</h3>
+        </div>
+        </a>
+        <a href="BrewingEquippments.html">
+        <div class="items">
+			<img src="Images/pexels-olenkabohovyk-3749174.jpg" alt="To Brewing Equipments">
+            <h3>Here we can check the brewing equipments</h3>
+        </div>
+        </a>
+        <a href="Events&Workshops.html">
+        <div class="items">
+			<img src="Images/pexels-viktoria-alipatova-1083711-2130133.jpg" alt="To Events & Workshops">
+            <h3>Here we have Collaboration Events and Coffee Brewing session</h3>
+        </div>
+        </a>
+    </div>
+    <div class="footer">
+        <h2>Contact us</h2>
+        <br>
+        <div class="footericons">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-skype"></i>
+        <i class="fa fa-tumblr"></i>
+        <i class="fa fa-wechat"></i>
+        </div>
+    </div>
+    <div class="Bottomnavi">
+        <div class="navilist">
+            <div class="Products">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="MenuSelection.html">Menu Selection</a></li>
+                    <li><a href="Coffee_Beans'_Info.html">Coffee Beans' Info</a></li>
+                    <li><a href="CoffeeBeansSelection.html">Coffee Beans Selection</a></li>
+                    <li><a href="BrewingEquippments.html">Brewing Equippments</a></li>
+                </ul>
+            </div>
+            <div class="Activities">
+                <h3>Activities</h3>
+                <ul>
+                    <li><a href="Events&Workshops.html">Events and Workshops</a></li>
+                    <li><a href="SpecialOffers&Subscriptions.html">SpecialOffers & Subscriptions</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>Copyright @ Bean Boutique</p><br>
+    </div>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>

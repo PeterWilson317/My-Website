@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Equippments</title>
+	<link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="Saleheader">
+    <div class="Button_sect">
+     <a href="Index.html">Home</a>
+     </div>
+     <h1 id="PageTitle">Brewing Equipments</h1>
+    <div class="Button_sect">
+     <a href="ShoppingCart.html">
+     <i class="fa fa-shopping-cart"></i></a>
+     </div>
+    </div>
+    <h1 class="welcome_text">Here are the Equipments for Coffees</h1>
+    <div class="floating_items">
+        <div class="items" id="v60-card">
+            <img src="Images/V60GlassDripper.jpg" alt="V60GlassDripper">
+            <h2>V60<br>$30</h2>
+            <p>V60 is a iconic 60-degree, cone-shaped pour-over coffee dripper featuring spiral ribs and a large, single hole for precise, fast extraction that produces a clean, nuanced cup.</p>
+            <button onclick="addToCart('V60', 30, 'equipment')">Add to Cart</button>
+        </div>
+        <div class="items" id="turkish-card">
+            <img src="Images/TurkishPot.jpg" alt="Turkish">
+            <h2>Turkish Coffee Pot<br>$45</h2>
+            <p>Turkish coffee pot, known as a cezve (jezz-veh) or ibrik, is a small, long-handled vessel with a narrow neck and wider base designed specifically for brewing Turkish coffee.</p>
+            <button onclick="addToCart('Turkish Pot', 45, 'equipment')">Add to Cart</button>
+        </div>
+        <div class="items" id="french-card">
+            <img src="Images/FrenchPress.jpg" alt="French_Press">
+            <h2>French Press Coffee Maker<br>$40</h2>
+            <p>French press is a simple, manual coffee maker consisting of a cylindrical beaker, plunger, and mesh filter that brews rich, full-bodied coffee by steeping coarse grounds in hot water for four minutes before filtering. It is known for producing a robust, oil-rich cup, using a 1:15 ratio, and requiring no paper filters.</p>
+            <button onclick="addToCart('French Press', 40, 'equipment')">Add to Cart</button>
+        </div>
+        <div class="items" id="moka-card">
+            <img src="Images/MokaPot.jpg" alt="Moka_Pot">
+            <h2>Moka Pot<br>$50</h2>
+            <p>Moka pot is a stovetop coffee maker that brews rich, intense coffee similar to espresso by passing boiling water pressurized by steam 1 - 2 bars through ground coffee.</p>
+            <button onclick="addToCart('Moka Pot', 50, 'equipment')">Add to Cart</button>
+        </div>
+        <div class="items" id="aero-card">
+            <img src="Images/AeroPress.jpg" alt="Aero_Press">
+            <h2>Aero Press<br>$40</h2>
+            <p>AeroPress is a versatile, portable coffee maker that uses a 3-in-1 brewing method (immersion, aeration, and pressure) to create smooth, rich, grit-free coffee in about a minute.</p>
+            <button onclick="addToCart('Aero Press', 40, 'equipment')">Add to Cart</button>
+        </div>
+        <div class="items" id="chemex-card">
+            <img src="Images/Chemex.jpg" alt="Chemex">
+            <h2>Chemex<br>$50</h2>
+            <p>Chemex coffeemaker consists of an hourglass-shaped glass flask with a conical funnel-like neck and proprietary filters, made of bonded paper, that are thicker than the standard paper filters used for a drip coffeemaker.</p>
+            <button onclick="addToCart('Chemex', 50, 'equipment')">Add to Cart</button>
+        </div>
+        <div class="items" id="phin-card">
+            <img src="Images/VietnameseDrip.jpg" alt="Vietnamese Drip">
+            <h2>Vietnamese Drip<br>$25</h2>
+            <p>Vietnamese drip coffee maker, or Phin, is a small, four-piece stainless steel or aluminum brewing tool. It sits directly on top of a mug and uses gravity to slowly brew a strong, dark, single-cup coffee, traditionally served with sweetened condensed milk.</p>
+            <button onclick="addToCart('Phin filter', 25, 'equipment')">Add to Cart</button>
+        </div>
+        <div class="items" id="cold-card">
+            <img src="Images/ColdBrew.jpg" alt="Cold Brew">
+            <h2>Cold Brew<br>$50</h2>
+            <p>Cold brew coffee makers create smooth, low-acid coffee by steeping coarse grounds in cold water for 12–24 hours, often using immersion (filter baskets) or drip methods.</p>
+            <button onclick="addToCart('Cold Brew', 50, 'equipment')">Add to Cart</button>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Contact us</h2>
+        <br>
+        <div class="footericons">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-skype"></i>
+        <i class="fa fa-tumblr"></i>
+        <i class="fa fa-wechat"></i>
+        </div>
+    </div>
+    <div class="Bottomnavi">
+        <div class="navilist">
+            <div class="Products">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="MenuSelection.html">Menu Selection</a></li>
+                    <li><a href="Coffee_Beans'_Info.html">Coffee Beans' Info</a></li>
+                    <li><a href="CoffeeBeansSelection.html">Coffee Beans Selection</a></li>
+                    <li><a href="BrewingEquippments.html">Brewing Equippments</a></li>
+                </ul>
+            </div>
+            <div class="Activities">
+                <h3>Activities</h3>
+                <ul>
+                    <li><a href="Events&Workshops.html">Events and Workshops</a></li>
+                    <li><a href="SpecialOffers&Subscriptions.html">SpecialOffers & Subscriptions</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>copyright @ Bean Boutique</p><br>
+    </div>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>
